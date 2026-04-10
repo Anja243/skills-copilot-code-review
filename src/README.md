@@ -36,7 +36,7 @@ A super simple FastAPI application that allows students to view and sign up for 
 | POST | `/activities/{activity_name}/signup?email=student@mergington.edu&teacher_username=<username>` | Register a student to an activity (auth required) |
 | POST | `/activities/{activity_name}/unregister?email=student@mergington.edu&teacher_username=<username>` | Remove a student from an activity (auth required) |
 | POST | `/auth/login?username=<username>&password=<password>` | Sign in a teacher/admin user |
-| GET | `/auth/check-session?username=<username>` | Validate a signed in user |
+| GET | `/auth/check-session?username=<username>` | Get teacher profile data by username (does not validate a session) |
 | GET | `/announcements` | Get active announcements visible to everyone |
 | GET | `/announcements/all?teacher_username=<username>` | Get all announcements for management (auth required) |
 | POST | `/announcements?teacher_username=<username>` | Create an announcement (auth required, JSON body) |
